@@ -7,28 +7,28 @@
 </head>
 
 <body>
+  <div class="w3-hide w3-padding-small">
+    <input type="hidden" id="photodata" name="photodata" class="w3-input w3-border">
+    <div class="w3-panel w3-grey w3-display-container w3-round-xxlarge w3-hide">
+      <span onclick="this.parentElement.style.display = 'none'"
+        class="w3-button w3-large w3-green w3-display-topright">×</span>
+      <h3>WEBCAM</h3>
+      <img id="photo" class="w3-image w3-border w3-display-topright w3-circle w3-hide" width="340px" height="200px">
+      <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+  </div>
+  <div class="w3-display-topright w3-hide-small">
+    <div class="w3-panel w3-display-container">
+      <video id="video" class="w3-border"></video>
+    </div>
+  </div>
+  <div class="w3-display-topright w3-hide-large w3-hide-medium" style="margin-top:0px;">
+    <div class="w3-panel w3-display-container" style="margin-top:0px;">
+      <video height="100%" width="120px" id="video2" class="w3-border"></video>
+    </div>
+  </div>
 
-    <div class="w3-hide w3-padding-small">
-        <input type="hidden" id="photodata" name="photodata" class="w3-input w3-border"> 
-        <div class="w3-panel w3-grey w3-display-container w3-round-xxlarge w3-hide">
-            <span onclick="this.parentElement.style.display = 'none'" class="w3-button w3-large w3-green w3-display-topright">×</span>
-            <h3>WEBCAM</h3>
-            <img id="photo" class="w3-image w3-border w3-display-topright w3-circle w3-hide" width="340px" height="200px">
-            <canvas id="canvas" style="display: none;"></canvas>
-        </div> 
-    </div>
-    <div class="w3-display-topright w3-hide-small">
-        <div class="w3-panel w3-display-container">
-            <video id="video" class="w3-border"></video>
-        </div>
-    </div>
-    <div class="w3-display-topright w3-hide-large w3-hide-medium"  style="margin-top:0px;">
-        <div class="w3-panel w3-display-container" style="margin-top:0px;">
-            <video  height="100%" width="120px" id="video2" class="w3-border"></video>
-        </div>
-    </div>
-
-  <table border="1">
+  <table border="1" class="w3-table-all">
     <thead>
       <tr>
         <th>#Id</th>
